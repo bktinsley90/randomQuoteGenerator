@@ -53,6 +53,7 @@ function getRandomQuote(quotes) {
 
 /***
  * `printQuote` function
+ * updated setinterval
 ***/
 let changeQ = setInterval(printQuote, 5000);
 
