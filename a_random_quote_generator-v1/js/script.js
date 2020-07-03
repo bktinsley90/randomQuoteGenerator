@@ -54,7 +54,9 @@ function getRandomQuote(quotes) {
 /***
  * `printQuote` function
 ***/
-setInterval(function printQuote() {
+let changeQ = setInterval(printQuote, 5000);
+
+function printQuote() {
   // call the getRandomQuote function
   let randomQ = getRandomQuote(quotes);
   // use the returned quote object to build a string of HTML and quote properties
@@ -70,7 +72,7 @@ setInterval(function printQuote() {
   HTML += `</p>`
   // then use that string to display a random quote in the browser.
   return document.getElementById('quote-box').innerHTML = HTML
-}, 5000);
+}
 // through lots of headache and google search i figured this out. IDC what grade i get i'm proud :)
 
 
